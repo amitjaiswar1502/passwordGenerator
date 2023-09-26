@@ -1,0 +1,104 @@
+.container {
+  background: rgba(255, 255, 255, 0.068);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.container button {
+  border-radius: 0 10px 10px 0;
+  border: #fff;
+  cursor: pointer;
+  background-color: royalblue;
+  color: #fff;
+}
+button:hover {
+  background-color: rgb(15, 58, 188);
+}
+
+.input-content {
+  margin: 30px;
+}
+
+button {
+  font-size: 20px;
+  width: 12%;
+  height: 40px;
+}
+
+.controls {
+  font-size: 2vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 80px;
+  gap: 15px;
+}
+
+#range {
+  width: 50%;
+}
+
+.checkboxInput {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+label,
+#pass {
+  color: orange;
+}
+
+h1 {
+  font-size: 4.5vmin;
+  padding: 10px 7px;
+  color: #fff;
+}
+
+.controls-item {
+  display: flex;
+  gap: 10px;
+}
+
+#pass {
+  background-color: #0000008c;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  width: 50%;
+  height: 40px;
+  font-size: 1.5vmax;
+}
+
+@media only screen and (max-width: 760px) {
+  #pass {
+    width: 70%;
+    height: 40px;
+  }
+
+  button {
+    font-size: 12px;
+    width: 18%;
+  }
+
+  #range {
+    width: 45%;
+  }
+
+  .controls {
+    font-size: 12px;
+    flex-direction: column;
+  }
+
+  .controls-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
